@@ -222,7 +222,6 @@ namespace cg::renderer
 			}
 
 		}
-		// TODO Lab: 2.06 Implement TAA in `ray_generation` method of `raytracer` class
 	}
 
 	template<typename VB, typename RT>
@@ -258,9 +257,6 @@ namespace cg::renderer
 										  *closest_triangle, depth);
 		}
 
-
-		// TODO Lab: 2.04 Adjust `trace_ray` method of `raytracer` to use `any_hit_shader`
-		// TODO Lab: 2.05 Adjust `trace_ray` method of `raytracer` class to traverse the acceleration structure
 		return miss_shader(ray);
 	}
 

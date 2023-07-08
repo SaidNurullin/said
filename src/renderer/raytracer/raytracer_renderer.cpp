@@ -121,10 +121,5 @@ void cg::renderer::ray_tracing_renderer::render()
 	std::cout << "Raytracing took " << duration.count() << " ms\n";
 
 	cg::utils::save_resource(*render_target, settings->result_path);
-	// TODO Lab: 2.02 Add `closest_hit_shader` to `raytracer` class to return diffuse color
-	// TODO Lab: 2.03 Adjust `closest_hit_shader` of `raytracer` to implement Lambertian shading model
-	// TODO Lab: 2.04 Define `any_hit_shader` and `miss_shader` for `shadow_raytracer`
-	// TODO Lab: 2.04 Adjust `closest_hit_shader` of `raytracer` to cast shadows rays and to ignore occluded lights
-	// TODO Lab: 2.05 Adjust `ray_tracing_renderer` class to build the acceleration structure
-	// TODO Lab: 2.06 (Bonus) Adjust `closest_hit_shader` for Monte-Carlo light tracing
+
 }
