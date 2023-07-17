@@ -431,7 +431,7 @@ void cg::renderer::dx12_renderer::load_assets()
 			  constant_buffer);
 	CD3DX12_RANGE read_range(0, 0);
 	THROW_IF_FAILED(constant_buffer->Map(0, &read_range,
-										 reinterpret_cast<void**>(constant_buffer_data_begin)));
+										 reinterpret_cast<void**>(&constant_buffer_data_begin)));
 
 	cbv_srv_heap.create_heap(
 			device,
